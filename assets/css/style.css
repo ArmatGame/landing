@@ -67,9 +67,51 @@ body {
 }
 /* End Global Rules */
 /* Start Framework */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
 
+@media (min-width: 1400px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+
+@media (max-width: 390px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--color-two);
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.card p {
+  color: #777;
+  line-height: 1.8;
+}
 /* End Framework */
 /* Start Components */
+section {
+  padding: 100px 0;
+}
+
+.content {
+  padding-bottom: 80px;
+}
+
 .special-heading {
   color: var(--color-two);
   margin-bottom: 1rem;
@@ -163,10 +205,6 @@ header .container .header-content .content {
 }
 /* End Header */
 /* Start section one */
-.sec-one .container .content {
-  padding: 50px 0 200px;
-}
-
 .sec-one .container .body-sec-one {
   display: flex;
   justify-content: center;
@@ -181,7 +219,7 @@ header .container .header-content .content {
 }
 
 .sec-one .container .body-sec-one .image {
-width: 60%;
+width: 50%;
 }
 
 .sec-one .container .body-sec-one .image img {
@@ -202,5 +240,72 @@ width: 60%;
   margin-bottom: 2rem;
 }
 /* End section one */
+/* Start section two */
+.sec-two .container .image {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.sec-two .container .image img {
+  width: 100%;
+}
+/* End section two */
+/* End section four */
+.sec-four .cards {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (min-width: 1400px) {
+  .sec-four .cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+/* End section four */
+/* Start Footer */
+footer {
+  background-color: #eee;
+  padding: 40px 20px;
+}
+
+footer .cards-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  footer .cards-plus {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.cards-plus .card-plus {
+  width: 250px;
+}
+
+.cards-plus .card-plus .image {
+  width: 50px;
+}
+
+@media (max-width: 800px) {
+  .cards-plus .card-plus .image {
+    margin: 0 auto;
+  }
+}
 
 
+footer .container .cards-plus .card-plus .image img {
+  width: 100%;
+}
+
+footer .container .cards-plus .card-plus p {
+  color: #777;
+}
+
+footer .container .cards-plus .card-plus:last-child a {
+  text-decoration: none;
+  color: #777;
+}
+/* End Footer */
