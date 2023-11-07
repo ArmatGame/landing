@@ -190,8 +190,6 @@ header {
   background-size: cover;
 }
 
-
-
 @media (max-width: 767px) {
   header {
     background-image: url("../images/bg-header-mobile.png");
@@ -244,6 +242,10 @@ width: 50%;
 }
 /* End section one */
 /* Start section two */
+.sec-two {
+  background-color: #eee;
+}
+
 .sec-two .container .image {
   width: 75%;
   margin: 0 auto;
@@ -253,7 +255,11 @@ width: 50%;
   width: 100%;
 }
 /* End section two */
-/* End section four */
+/* Start section four */
+.sec-four {
+  background-color: #eee;
+}
+
 .sec-four .cards {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
