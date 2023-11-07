@@ -149,9 +149,6 @@ body {
 }
 /* End Components */
 /* Start Header */
-
-/* End Header */
-/* Start section one */
 header {
   padding: 100px 0;
 }
@@ -163,6 +160,46 @@ header .container .image {
 
 header .container .header-content .content {
   margin: 50px 0;
+}
+/* End Header */
+/* Start section one */
+.sec-one .container .content {
+  padding: 50px 0 200px;
+}
+
+.sec-one .container .body-sec-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+@media (max-width: 1000px) {
+  .sec-one .container .body-sec-one {
+    flex-direction: column;
+  }
+}
+
+.sec-one .container .body-sec-one .image {
+width: 60%;
+}
+
+.sec-one .container .body-sec-one .image img {
+  width: 100%;
+}
+
+.sec-one .container .body-sec-one .body-sec-one-content h1,
+.sec-one .container .body-sec-one .body-sec-one-content h1 + p {
+  text-align: start;
+  margin-bottom: .2rem;
+}
+
+.sec-one .container .body-sec-one .body-sec-one-content h1 {
+  font-size: 1.5rem;
+}
+
+.sec-one .container .body-sec-one .body-sec-one-content h1 + p {
+  margin-bottom: 2rem;
 }
 /* End section one */
 
