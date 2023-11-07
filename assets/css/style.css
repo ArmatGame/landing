@@ -1,0 +1,169 @@
+/* Start Variables */
+:root {
+  --main-color: #26bba5;
+  --color-one: #5f75ff;
+  --color-two: #4b5258;
+  --color-three: #a7adab;
+}
+/* End Variables */
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+  }
+}
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 546px) {
+
+}
+/* End Global Rules */
+/* Start Framework */
+
+/* End Framework */
+/* Start Components */
+.special-heading {
+  color: var(--color-two);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.special-heading + p {
+  color: var(--color-three);
+  text-align: center;
+  line-height: 1.8;
+}
+
+@media (max-width: 546px) {
+  .special-heading + p {
+    font-size: 12px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 450px) {
+  .btn {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.btn a {
+  color: white;
+  width: 260px;
+  display: block;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@media (max-width: 450px) {
+  .btn a {
+    margin-bottom: 10px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+}
+
+.btn:first-child a {
+  background-color: var(--main-color);
+}
+
+.btn:last-child a {
+  background-color: var(--color-one);
+}
+/* End Components */
+/* Start Header */
+
+/* End Header */
+/* Start section one */
+header {
+  padding: 100px 0;
+}
+
+header .container .image {
+  width: 100%;
+  text-align: center;
+}
+
+header .container .header-content .content {
+  margin: 50px 0;
+}
+/* End section one */
+
+
