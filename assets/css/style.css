@@ -19,17 +19,6 @@
 
 body {
   font-family: 'Bai Jamjuree', sans-serif;
-  background-image: url("../images/bg-header-desktop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
-@media (max-width: 767px) {
-  body {
-    background-image: url("../images/bg-header-mobile.png");
-  }
 }
 
 
@@ -193,6 +182,20 @@ section {
 /* Start Header */
 header {
   padding: 100px 0;
+}
+
+header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media (max-width: 767px) {
+  header {
+    background-image: url("../images/bg-header-mobile.png");
+  }
 }
 
 header .container .image {
